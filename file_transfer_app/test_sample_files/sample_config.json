@@ -1,0 +1,25 @@
+{
+  "application": "File Transfer Application",
+  "version": "1.0",
+  "server": {
+    "host": "localhost",
+    "port": 5000,
+    "buffer_size": 1024,
+    "chunk_size": 4096,
+    "max_clients": 100
+  },
+  "client": {
+    "timeout": 30,
+    "retry_attempts": 3
+  },
+  "security": {
+    "allow_directory_traversal": false,
+    "allowed_extensions": ["*"],
+    "max_filename_length": 255
+  },
+  "logging": {
+    "enabled": true,
+    "level": "INFO",
+    "format": "[%(levelname)s] %(message)s"
+  }
+}

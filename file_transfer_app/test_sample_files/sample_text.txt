@@ -1,0 +1,23 @@
+This is a sample text file for testing the File Transfer Application.
+
+File Transfer System
+====================
+
+This file demonstrates successful file transfer between client and server.
+It contains multiple lines of text to simulate a real document.
+
+Features tested:
+- Text encoding (UTF-8)
+- Line breaks preservation
+- File integrity verification
+
+You can modify this file with different content for testing purposes.
+
+Sample Content:
+- Line 1
+- Line 2
+- Line 3
+- Line 4
+- Line 5
+
+End of sample text file.
