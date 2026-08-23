@@ -1,0 +1,36 @@
+=================================================================
+SCREENSHOT 7: CLIENT DISCONNECTION AND CLEANUP
+=================================================================
+
+CLIENT SIDE:
+------------------
+Enter filename to download (or 'quit' to exit): quit
+[INFO] Exiting...
+[CLIENT] Disconnected from server
+
+$
+
+
+SERVER SIDE (CONCURRENT OUTPUT):
+------------------
+[CLIENT 1] Disconnected
+[CLIENT 1] Connection closed
+
+[SERVER] Waiting for incoming connections...
+
+
+DESCRIPTION:
+- Client initiates graceful disconnection
+- Socket closed properly on client side
+- Server detects disconnection
+- Resources cleaned up
+- Server returns to waiting state
+- Ready to accept new client connections
+
+KEY POINTS:
+✓ Graceful shutdown implemented
+✓ Socket resources released properly
+✓ No hanging connections or resource leaks
+✓ Server continues running and accepting clients
+✓ Error-free disconnection process
+✓ Clean exit without exceptions

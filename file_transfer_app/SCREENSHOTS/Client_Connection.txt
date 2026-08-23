@@ -1,0 +1,30 @@
+=================================================================
+SCREENSHOT 2: CLIENT CONNECTION AND INTERACTIVE MENU
+=================================================================
+
+$ python3 client.py
+
+[CLIENT] Connected to localhost:5000
+
+==================================================
+File Transfer Client - Interactive Mode
+==================================================
+Commands:
+  - Type filename to download
+  - Type 'quit' to exit
+
+Enter filename to download (or 'quit' to exit):
+
+
+DESCRIPTION:
+- Client successfully connects to server
+- Displays interactive menu prompts user for filename
+- Shows available commands
+- Ready to receive file requests
+
+KEY POINTS:
+✓ TCP socket created and connected to localhost:5000
+✓ Connection established with server
+✓ Downloaded files directory created automatically
+✓ Interactive mode started, waiting for user input
+✓ User can request files or exit

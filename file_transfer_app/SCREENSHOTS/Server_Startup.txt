@@ -1,0 +1,24 @@
+=================================================================
+SCREENSHOT 1: SERVER STARTUP
+=================================================================
+
+$ python3 server.py
+
+[SERVER] Started on localhost:5000
+[SERVER] Serving files from: /home/user/file_transfer_app/server_files
+[SERVER] Waiting for incoming connections...
+
+
+DESCRIPTION:
+- Server initializes successfully
+- Listens on localhost:5000 (TCP port)
+- Server files directory is created automatically
+- Server is ready to accept client connections
+- Multi-threaded architecture ready for concurrent clients
+
+KEY POINTS:
+✓ Socket created with AF_INET, SOCK_STREAM (TCP)
+✓ Socket bound to port 5000
+✓ Listen backlog set to 5 connections
+✓ SO_REUSEADDR option enabled
+✓ Waiting for incoming client connections

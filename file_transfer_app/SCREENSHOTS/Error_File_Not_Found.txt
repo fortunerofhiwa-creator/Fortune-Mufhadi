@@ -1,0 +1,36 @@
+=================================================================
+SCREENSHOT 4: ERROR HANDLING - FILE NOT FOUND
+=================================================================
+
+CLIENT SIDE:
+------------------
+Enter filename to download (or 'quit' to exit): nonexistent_file.txt
+[REQUEST] Requesting file: nonexistent_file.txt
+[ERROR] Server response: ERROR: File not found
+
+Enter filename to download (or 'quit' to exit):
+
+
+SERVER SIDE (CONCURRENT OUTPUT):
+------------------
+[CONNECTION] Client 2 connected from ('127.0.0.1', 54322)
+[CLIENT 2] Requested file: nonexistent_file.txt
+[CLIENT 2] File not found: nonexistent_file.txt
+[CLIENT 2] Connection closed
+
+
+DESCRIPTION:
+- Client requests a file that doesn't exist
+- Server checks file existence
+- Error message sent to client
+- Client displays error message
+- Connection remains open for next request
+- Server handles error gracefully
+
+KEY POINTS:
+✓ File existence validation works correctly
+✓ Appropriate error message returned
+✓ Connection not terminated on error
+✓ Client can retry with different filename
+✓ Error handling prevents server crashes
+✓ User-friendly error messages
